@@ -83,7 +83,8 @@ body {
 }
 
 .header__menu ul li a {
-	background-color: black;
+	background-color: #1F2120;
+  border-radius: 17px;
 }
 
 .header__menu ul li a,
@@ -152,7 +153,8 @@ body {
 .table {
   display: flex;
   flex-direction: column;
-  background-color: #2B3B4B;
+  background-color: #666a68;
+  border-radius: 17px;
   color: white;
   margin-top: 34px;
 	overflow: auto;
@@ -282,6 +284,10 @@ body {
 	width: 100%;
 }
 
+.fixed__buttons {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .footer {
 		padding: 10px 20px;
@@ -381,6 +387,43 @@ body {
 	.footer {
 		padding: 10px 20px 130px;
 	}
+
+  .fixed__button {
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 46px;
+    margin-bottom: 42px;
+    font-size: 18px;
+    border-radius: 17px;
+    line-height: 21px;
+    font-weight: 700;
+    padding: 12px 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: calc(50% - 21px);
+    position: fixed;
+    bottom: 0px;
+  }
+
+
+  .fixed__buttons {
+    display: flex;
+    background-color: #232939;
+    padding-right: 12px;
+    gap: 10px;
+  }
+
+  .fixed__button--giris {
+    color: black;
+    background: linear-gradient(90deg, #FFC902 0%, #FFE61E 100%);
+  }
+
+  .fixed__button--katyl {
+    background: #119F4C;
+    color: black;
+    right: 12px;
+  }
 }
 
 @media (max-width: 720px) {
