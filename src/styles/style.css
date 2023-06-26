@@ -330,6 +330,11 @@ a {
   color: black;
 }
 
+.contacts {
+  justify-content: space-between;
+  display: flex;
+}
+
 @media (max-width: 1200px) {
   .footer {
 		padding: 10px 20px;
@@ -507,5 +512,9 @@ a {
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 80px;
+  }
+
+  .contacts {
+    flex-direction: column;
   }
 }
