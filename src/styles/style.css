@@ -288,6 +288,48 @@ body {
   display: none;
 }
 
+.sahabet__betting,
+.sahabet__casino, 
+.sahabet__bonus,
+.homepage,
+.sahabet__services,
+.sahabet__payments {
+  border-radius: 17px;
+  width: 70%;
+  margin-top: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.login__container, .support__container {
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+
+.sahabet__login {
+  max-height: 600px;
+  width: 30%;
+  border-radius: 17px;
+  min-height: 500px;
+}
+
+.list__in-container {
+  margin-top: 0px;
+}
+
+.sahabet__support {
+  height: 400px;
+  border-radius: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @media (max-width: 1200px) {
   .footer {
 		padding: 10px 20px;
@@ -302,6 +344,17 @@ body {
 		margin-left: 116px;
 		margin-right: 99px;
 	}
+
+  .login__container {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .sahabet__login {
+    max-height: auto;
+    width: 70%;
+    min-height: auto;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -423,6 +476,24 @@ body {
     background: #119F4C;
     color: black;
     right: 12px;
+  }
+
+  .sahabet__betting,
+  .sahabet__bonus,
+  .sahabet__casino,
+  .homepage,
+  .sahabet__services,
+  .sahabet__payments {
+    width: 100%;
+  }
+
+  .sahabet__login {
+    width: 100%;
+  }
+
+  .support__container {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
